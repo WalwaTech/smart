@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Smart Computer Solutions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #232526 0%, #00c6ff 100%);
+            color: #f4f4f4;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
+            color: #fff;
+            padding: 32px 0 24px 0;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0, 198, 255, 0.10);
+            border-bottom: 3px solid #00c6ff;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: #00c6ff;
+            text-shadow: 0 2px 8px #23252644;
+        }
+        
+        nav {
+            margin-top: 10px;
+        }
+        
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.08rem;
+            letter-spacing: 1px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-bottom 0.2s;
+        }
+        
+        nav a:hover {
+            color: #00c6ff;
+            border-bottom: 2px solid #00c6ff;
+        }
+        
+        main {
+            max-width: 700px;
+            margin: 36px auto 32px auto;
+            padding: 0 18px;
+        }
+        
+        .contact-section {
+            background: rgba(255, 255, 255, 0.10);
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(0, 198, 255, 0.08);
+            padding: 32px 24px;
+            margin-bottom: 38px;
+        }
+        
+        .contact-section h2 {
+            color: #00c6ff;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .contact-details {
+            margin-bottom: 24px;
+        }
+        
+        .contact-details p,
+        .contact-details a {
+            color: #e0e0e0;
+            font-size: 1.13rem;
+            margin-bottom: 8px;
+            text-decoration: none;
+        }
+        
+        .contact-details a:hover {
+            color: #00c6ff;
+            text-decoration: underline;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 24px;
+        }
+        
+        label {
+            font-weight: 500;
+            color: #b2fefa;
+        }
+        
+        input,
+        textarea {
+            padding: 0.7rem;
+            border-radius: 6px;
+            border: none;
+            background: #f4f4f4;
+            color: #222;
+            font-size: 1rem;
+            outline: none;
+            transition: box-shadow 0.2s;
+        }
+        
+        input:focus,
+        textarea:focus {
+            box-shadow: 0 0 0 2px #00c6ff;
+        }
+        
+        button {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 198, 255, 0.13);
+            transition: background 0.2s, transform 0.2s;
+        }
+        
+        button:hover {
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+            transform: translateY(-2px) scale(1.04);
+        }
+        
+        .map-section {
+            margin-top: 24px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 32px rgba(0, 198, 255, 0.08);
+        }
+        
+        #map {
+            width: 100%;
+            height: 350px;
+            border: none;
+            display: block;
+        }
+        
+        .live-location-btn {
+            margin: 18px 0 0 0;
+            background: #00c6ff;
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .live-location-btn:hover {
+            background: #0072ff;
+        }
+        
+        .location-status {
+            color: #b2fefa;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 18px 0;
+            background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
+            color: #b2fefa;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+            border-top: 2px solid #00c6ff;
+            margin-top: 32px;
+            box-shadow: 0 -2px 12px rgba(0, 198, 255, 0.10);
+        }
+        
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                margin: 0 8px;
+                font-size: 1rem;
+            }
+            main {
+                padding: 0 5px;
+            }
+            #map {
+                height: 220px;
+            }
+        }
+        
+        .whatsapp-logo {
+            background-color: #25D366;
+            border-radius: 50%;
+            padding: 3px;
+            width: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section" id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:info@smartcomputersolution8@gmaiil.com">info@Smartcomputersolutions@gmaiil.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+255 676 702 663">+255 676 702 663</a></p>
+                <div class="whatsapp-container">
+                    <a href="https://chat.whatsapp.com/FaGI5IzLCKRGUhLeaBWOyO">
+                        <img src="images (5).jpeg" alt="chat on whatsapp" class="whatsapp-logo">
+                        <span>click here to chat on whatsapp</span>
+                    </a>
+                </div>
+                <p><strong>Address:</strong> P.O.Box 2798 Njiro Hill, Arusha Tanzania</p>
+                <p>We’re open: <strong>Mon - Sat, 08:00am - 04:00pm</strong></p>
+            </div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <button class="live-location-btn" onclick="getLocation()">Show My Live Location on Map</button>
+            <div class="location-status" id="location-status"></div>
+        </section>
+        <div class="map-section">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.9999999999995!2d32.582520315334!3d0.34759689999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMjAnMzEuMCJOIDMywrAzNCcwMC4wIkU!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Smart Computer Solutions. All rights reserved.</p>
+    </footer>
+    <script>
+        function getLocation() {
+            const status = document.getElementById('location-status');
+            if (navigator.geolocation) {
+                status.textContent = "Getting your location...";
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                status.textContent = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            const map = document.getElementById('map');
+            map.src = `https://maps.google.com/maps?q=${lat},${lng}&z=15&output=embed`;
+            document.getElementById('location-status').textContent = "Showing your live location on the map below.";
+        }
+
+        function showError(error) {
+            let msg = "Unable to retrieve your location.";
+            if (error.code === error.PERMISSION_DENIED) {
+                msg = "Permission denied. Please allow location access.";
+            } else if (error.code === error.POSITION_UNAVAILABLE) {
+                msg = "Location information is unavailable.";
+            } else if (error.code === error.TIMEOUT) {
+                msg = "The request to get your location timed out.";
+            }
+            document.getElementById('location-status').textContent = msg;
+        }
+    </script>
+</body>
+
+</html>

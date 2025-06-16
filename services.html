@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Smart Computer Solutions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #232526 0%, #00c6ff 100%);
+            color: #f4f4f4;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
+            color: #fff;
+            padding: 32px 0 24px 0;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0, 198, 255, 0.10);
+            border-bottom: 3px solid #00c6ff;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: #00c6ff;
+            text-shadow: 0 2px 8px #23252644;
+        }
+        
+        nav {
+            margin-top: 10px;
+        }
+        
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.08rem;
+            letter-spacing: 1px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-bottom 0.2s;
+        }
+        
+        nav a:hover {
+            color: #00c6ff;
+            border-bottom: 2px solid #00c6ff;
+        }
+        
+        main {
+            max-width: 1100px;
+            margin: 36px auto 32px auto;
+            padding: 0 18px;
+        }
+        
+        .service-section {
+            background: rgba(255, 255, 255, 0.10);
+            border-radius: 18px;
+            margin-bottom: 38px;
+            box-shadow: 0 4px 32px rgba(0, 198, 255, 0.08);
+            padding: 32px 24px;
+        }
+        
+        .service-section h2 {
+            color: #00c6ff;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .service-section p {
+            color: #e0e0e0;
+            font-size: 1.13rem;
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+        
+        .service-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .service-gallery img {
+            width: 220px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0, 198, 255, 0.13);
+            border: 2px solid #00c6ff;
+            background: #fff;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        }
+        
+        .service-gallery img:hover {
+            transform: scale(1.07) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(0, 198, 255, 0.25);
+            border-color: #b2fefa;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 18px 0;
+            background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
+            color: #b2fefa;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+            border-top: 2px solid #00c6ff;
+            margin-top: 32px;
+            box-shadow: 0 -2px 12px rgba(0, 198, 255, 0.10);
+        }
+        
+        @media (max-width: 900px) {
+            main {
+                max-width: 98vw;
+            }
+            .service-section {
+                padding: 18px 5px;
+            }
+            .service-gallery img {
+                width: 95vw;
+                max-width: 340px;
+                height: 160px;
+            }
+        }
+        
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                margin: 0 8px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#hardware">Hardware</a>
+            <a href="#software">Software</a>
+            <a href="#network">Networking</a>
+            <a href="#webdesign">Web Design</a>
+            <a href="#graphics">Graphics</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Hardware Solutions -->
+        <section class="service-section" id="hardware">
+            <h2>Hardware Repair & Upgrades</h2>
+            <p>
+                From broken screens to sluggish desktops, our expert technicians breathe new life into your devices. We handle diagnostics, repairs, upgrades, and custom PC builds with precision and care using only quality parts and the latest tools.
+            </p>
+            <div class="service-gallery">
+                <img src="hardware 1.jpeg" alt="Laptop Repair">
+                <img src="pc2.jpg" alt="PC Upgrade">
+                <img src="hardware4.jpg" alt="Custom PC Build">
+            </div>
+            <ul>
+                <li>Screen, keyboard, and battery replacements</li>
+                <li>RAM, SSD, and graphics card upgrades</li>
+                <li>Custom PC assembly and optimization</li>
+                <li>Full diagnostics and troubleshooting</li>
+            </ul>
+        </section>
+        <!-- Software Solutions -->
+        <section class="service-section" id="software">
+            <h2>Software Installation & Security</h2>
+            <p>
+                Stay protected and productive! We install, update, and troubleshoot all major operating systems and software. Our team removes viruses and malware, sets up essential apps, and ensures your data is safe and backed up.
+            </p>
+            <div class="service-gallery">
+                <img src="soft 3.jpeg" alt="Software Installation">
+                <img src="soft4.jpeg" alt="Virus Removal">
+                <img src="soft1.jpeg" alt="Data Backup">
+            </div>
+            <ul>
+                <li>Windows, macOS, and Linux installation</li>
+                <li>Virus, malware, and spyware removal</li>
+                <li>Data backup, recovery, and migration</li>
+                <li>Productivity and security software setup</li>
+            </ul>
+        </section>
+        <!-- Networking Solutions -->
+        <section class="service-section" id="network">
+            <h2>Internet & Networking Solutions</h2>
+            <p>
+                Get connected—fast and securely! We provide home and business network setup, Wi-Fi optimization, internet troubleshooting, and smart device integration. Enjoy seamless streaming, gaming, and work with our reliable networking solutions.
+            </p>
+            <div class="service-gallery">
+                <img src="net1.jpeg" alt="Wi-Fi Setup">
+                <img src="net2.jpeg" alt="Network Security">
+                <img src="net3 (1).jpeg" alt="Network configuration">
+
+            </div>
+            <ul>
+                <li>Wi-Fi and wired network installation</li>
+                <li>Router and firewall configuration</li>
+                <li>Internet speed and coverage optimization</li>
+                <li>Smart home and office device integration</li>
+            </ul>
+        </section>
+        <!-- Web Design Solutions -->
+        <section class="service-section" id="webdesign">
+            <h2>Web Design & Development</h2>
+            <p>
+                Make your online presence stand out! We design and develop modern, responsive websites tailored to your brand and business needs. From personal portfolios to business sites and e-commerce, we deliver visually stunning and user-friendly solutions.
+            </p>
+            <div class="service-gallery">
+                <img src="web1.jpeg" alt="Website Design">
+                <img src="web2.jpeg" alt="Responsive Layout">
+                <img src="web.jpeg" alt="Website Design">
+            </div>
+            <ul>
+                <li>Custom website design and development</li>
+                <li>Mobile-friendly and responsive layouts</li>
+                <li>SEO optimization and analytics setup</li>
+                <li>Website maintenance and updates</li>
+            </ul>
+        </section>
+        <!-- Graphics Solutions -->
+        <section class="service-section" id="graphics">
+            <h2>Graphics & Branding</h2>
+            <p>
+                Elevate your brand with professional graphics! We create logos, business cards, banners, and marketing materials that capture your vision and engage your audience. Let us help you make a lasting impression.
+            </p>
+            <div class="service-gallery">
+                <img src="gr1.jpeg" alt="Logo Design">
+                <img src="gr2.jpeg" alt="Business Card">
+                <img src="logo.jpeg" alt="Banner Design">
+            </div>
+            <ul>
+                <li>Logo and brand identity design</li>
+                <li>Business cards and stationery</li>
+                <li>Social media and web graphics</li>
+                <li>Marketing materials and banners</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Smart Computer Solutions. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
